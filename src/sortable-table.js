@@ -1,4 +1,4 @@
-import { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import SortableTableHeader from './sortable-table-header';
 import SortableTableBody from './sortable-table-body';
 
@@ -143,7 +143,7 @@ export default class SortableTable extends Component {
 
     return (
       <table
-        className="table"
+        className="table table-bordered table-hover"
         style={this.props.style} >
         <SortableTableHeader
           columns={this.props.columns}
